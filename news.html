@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<style>
+ul
+{
+
+padding:0; 
+margin:0;
+height:100%;
+overflow:auto;
+position:fixed;
+}
+ul li a
+{
+text-decoration:none;
+font-family:georgia;
+background-color:black;
+color:white;
+display:block;
+width:100px;
+margin:0px;
+padding:10px;
+border:1px solid black;
+text-align:center
+height:25px;
+line-height:25px;
+}
+ul li a:hover
+{
+bacground-color:white;
+}
+input[type=text] {
+width:20%;
+padding: 12px 20px;
+border: 1px solid black;
+}
+
+input[type=text]focus:pink {
+background-color: pink;
+}
+input[type=date] {
+width: 10%;
+padding: 12px 20px;
+border: 1px solid black;
+ 
+}
+
+input[type=number] {
+width: 10%;
+padding: 12px 20px;
+border: 1px solid black;
+}
+
+input[type=text]:focus {
+background-color: pink;
+}
+select {
+width: 20%;
+padding: 8px;
+border-radius: 4px;
+background-color: white;
+}
+h1.blue
+{
+color:blue;
+}
+h1
+{
+text-decoration:underline;
+}
+h2.para1   
+{
+padding:19px;
+border-color:black;
+border-width:2px;
+border-style:solid;
+background-color:white;
+font-size:39px;
+width:300px;
+}
+h3,h4,h9
+{
+text-decoration:underline;
+font-size:29px;
+margin-left:9px;
+}
+p.brown
+{
+color:brown;
+line-height:1.9em;
+font-size:20px;
+margin-left:9px;
+text-shadow:3px 3px yellow;
+}
+p.para
+{
+line-height:1.9em;
+color:purple;
+font-size:20px;
+margin-left:9px;
+}
+p.Tomato
+{
+color:red;
+font-size:20px;
+}
+p.red
+{
+line-height=1.9em;
+color:red;
+font-size:20px;
+margin-left:9px;
+}
+body
+{
+font-family:Genenva;
+font-weight:bolder;
+}
+p.pink
+{
+background-color:white;
+padding:10px;
+border-color:black;
+border-width:thick;
+padding-height:"9";
+font-size:20px;
+font-style:italic;
+margin-right:1000px;
+margin-left:9px;
+}
+
+body
+{
+border-color:black;
+border-width:4px;
+border-style:dashed;
+background-image:url(final.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+h10.grey
+{
+text-align:centre;
+}
+a:link
+{
+color:green;
+}
+a:visited
+{
+color:red;
+}
+a:hover
+{
+color:white;
+cursor:URL;
+}
+div
+{
+background-color-green;
+}
+h1.center
+{
+text-align:center;
+color:blue;
+}
+img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+opacity:10.0;
+}
+#grad{
+background-image: linear-gradient(green, yellow); 
+}
+</style>
+<script>
+function say(str,age)
+{
+var text="Fill this only once";
+if(age>18)
+{
+alert  (str);
+}
+}
+say("Fill this page only once",19);
+var todaDate=new Date();
+var u=todaDate.toDateString();
+document.write(todaDate);
+function myFunction()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+function Fun()
+{
+document.getElementById("der").style.color="red";
+}
+function Change()
+{
+document.getElementById("image").src="nature.jpg";
+}
+function New()
+{
+document.getElementById("image").src="nature.jpg";
+}
+function Old()
+{
+document.getElementById("image").src="community.jpg";
+}
+function My()
+{
+var el=document.createElement("p");
+var pt=document.createTextNode("PLEASE INSERT FORMAL PHOTO");
+el.appendChild(pt);
+var ty=document.getElementById("div2");
+ty.appendChild(el);
+ty.style.color="red";
+}
+function Jan()
+{
+var para = document.createElement("P");
+  para.innerHTML = "Hi Guys";
+ document.getElementById("div2").appendChild(para);
+}
+
+</script>
+</head>
+<body>
+<div style="margin-left:90.5%;padding:1px 16px;">
+<ul>
+<li><a href="sastra.html">Parent Web Interface</a></li>
+<li><a href="test.html">Welcome Kit</a></li>
+<li><a href="multiple.html">Library</a></li>
+<li><a href="emo.html">Rules</a></li>
+<li><a href="image.html">Calender</a></li>
+<li><a href="link.html">Campus Map</a></li>
+<li><a href="links.html">ASCIEE</a></li>
+<li><a href="sastra.html">Daksh</a></li>
+</ul>
+</div>
+<h1 class="center">
+NICE UNIVERSITY</h1>
+<p>
+
+<div id="grad"></div>
+<img class="center" src="community.jpg"title="SASTRA UNIVERSITY"id="image"onmouseover="New()"onmouseout="Old()">
+<button type="button"onclick="Change()"></button>
+</p>
+<div id="div2">
+</div>
+<button type="button"onclick="My()"></button>
+
+
+
+<div id="section">
+<p>
+<font>
+<font size="4" face="arial"color="black"
+</font>
+</p>
+</div>
+ <body bgcolor="lightgreen";
+<p>
+
+First name:
+<input type="text" name="naa name"placeholder="Your name" autofocus>&nbsp&nbsp&nbsp&nbsp
+<strong>
+ Last name:
+</strong>
+<input type="text" name="second name"value=""autocomplete="off"></br></br>
+DOB:
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="date" name="bday"value=""></br></br>
+Age:
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="number" min="18" max="90" name="age"value=""></br>
+</p>
+</div>
+<div>
+<h2 class="para1" <b>FEEDBACK:</b></h2>
+<p class="brown">Do u like his teaching?</br>
+<input type="radio" name="choice"value="Yes">Yes
+</br>
+<input type="radio" name="choice"value="No">No
+</p>
+<h3>About Teaching</h3>
+<p class="para">Please give genuine <i>Feedback</i></br>
+<input type="checkbox"name="multi"value="He has Good knowledge">He has good knowledge</br>
+<input type="checkbox"name="multi"value="He will teach outside knowledge">He will teach outside knowledge</br>
+<input type="checkbox"name="multi"value="He will give grace marks">He will give grace marks</br>
+<input type="checkbox"name="multi"value="He will give assignments">He  will give assignments</br>
+</p>
+<h4>The rating u will give to him?</h4>
+<p class="red">Dont give rating depending upon ur marks</br></br>
+Rating:
+<input type="range" min="0" max="9"id="ageInputId"oninput="ageoutputId.value=ageInputId.value"></br></br>
+<output name="ageoutputname"id="ageoutputId"></output>
+</p>
+<h9>which staff u wish for teaching java in the next sem?</h9>
+</br>
+</br>
+<select>
+<option value="lavanya">lavanya</br>
+  <option value="jyothi">jyothi</br>
+<option value="brindha">brindha</br>
+<option value="karthi">karthi</br>
+</select>
+ </br></br>
+<p class="pink">
+Comments:
+<textarea rows="15"cols=60"></textarea></br>
+</p>
+</br></br>
+</div>
+<audio controls>
+<source src="feedback.M4A"/>
+</audio></br></br>
+<p class="Tomato">
+Insert your photo:
+</br></br>
+<input type="file" name="img" multiple>
+</p>
+<p id="demo"> Click to submit.</p>
+<button type="button"onclick="myFunction()">Submit</button>
+<p id="der">Click to Reset</p> 
+<button type="button"onclick="Fun()">Reset</button>
+<h10 class=grey>
+
+</br>
+</h10>
+</body>
+</html>
